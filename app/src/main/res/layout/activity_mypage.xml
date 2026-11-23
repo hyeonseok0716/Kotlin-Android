@@ -10,13 +10,16 @@
     tools:context=".mypage.MyPageActivity">
 
 
+    <FrameLayout android:layout_width="match_parent" android:layout_height="150dp">
     <ImageView
         android:id="@+id/loginimg"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_alignParentTop="false"
         android:layout_centerHorizontal="false"
-        android:src="@drawable/mypage_user" />
+        android:src="@drawable/mypage_user" android:scaleType="centerInside" />
+    <ImageButton android:id="@+id/profileCamera" android:layout_width="40dp" android:layout_height="40dp" android:layout_gravity="center" android:layout_marginStart="75dp" android:layout_marginTop="55dp" android:backgroundTint="#48B6B5" android:src="@android:drawable/ic_menu_camera" android:contentDescription="프로필 사진 설정" />
+    </FrameLayout>
 
     <LinearLayout
         android:id="@+id/work_layout"
