@@ -3,13 +3,16 @@
     <application android:allowBackup="true" android:dataExtractionRules="@xml/data_extraction_rules" android:fullBackupContent="@xml/backup_rules" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/Theme.BookMarket">
         <activity android:name=".chapter06.IntentFilterProject" android:exported="false" android:windowSoftInputMode="adjustResize">
             </activity>
-        <activity android:name=".MainActivity" android:exported="false" android:windowSoftInputMode="adjustResize">
-            </activity>
+
         <activity android:name=".chapter04.TableLayoutProject" android:exported="false" android:windowSoftInputMode="adjustResize" />
         <activity android:name=".BooksActivity" android:exported="false" />
         <activity android:name=".MenuActivity" android:exported="false" />
+        <activity android:name=".cart.CartActivity" android:exported="false" />
+        <activity android:name=".order.ShippingActivity" android:exported="false" />
+        <activity android:name=".order.OrderActivity" android:exported="false" />
         <activity android:name=".BookActivity" android:exported="false" />
-        <activity android:name=".chapter08.CustomDialogProject" android:exported="true">
+        <activity android:name=".chapter08.CustomDialogProject" android:exported="false" />
+        <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

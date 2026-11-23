@@ -1,6 +1,10 @@
 package com.androidbook.bookmarket
 
 import android.content.Intent
+import androidx.appcompat.app.AlertDialog
+import com.androidbook.bookmarket.cart.CartActivity
+import com.androidbook.bookmarket.model.Book
+import com.androidbook.bookmarket.model.CartRepository
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -43,6 +47,21 @@ class BookActivity : AppCompatActivity() {
         val cover = findViewById<ImageView>(R.id.imageView1)
         if (image != null) cover.setImageResource(image)
         cover.contentDescription = intent.getStringExtra("name")
+        findViewById<android.widget.Button>(R.id.book_bt01).setOnClickListener {
+            AlertDialog.Builder(this)
+                .setTitle("장바구니 담기")
+                .setMessage("도서를 장바구니에 추가하겠습니까?")
+                .setPositiveButton("예") { _, _ ->
+                    val book = Book().apply {
+                        bookid = intent.getStringExtra("bookid").orEmpty()
+                        name = intent.getStringExtra("name").orEmpty()
+                        price = intent.getStringExtra("price")?.filter(Char::isDigit)?.toIntOrNull() ?: 0
+                    }
+                    CartRepository.addCartItems(book)
+                }
+                .setNegativeButton("아니요", null)
+                .show()
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -63,7 +82,7 @@ class BookActivity : AppCompatActivity() {
                 startActivity(Intent(this, BooksActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP))
                 finish()
             }
-            R.id.menu_cart -> Toast.makeText(this, item.title, Toast.LENGTH_SHORT).show()
+            R.id.menu_cart -> startActivity(Intent(this, CartActivity::class.java))
             else -> return super.onOptionsItemSelected(item)
         }
         return true
