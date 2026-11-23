@@ -20,4 +20,11 @@
     <string name="book_mysql_price">정가 : 34,000원</string>
     <string name="book_php_price">정가 : 30,000원</string>
     <string name="book_html_price">정가 : 28,000원</string>
+    <string name="intent_filter_title">IntentFilter 실습</string>
+    <string name="email_recipient">받는 사람</string>
+    <string name="email_subject">제목</string>
+    <string name="email_content">내용</string>
+    <string name="compose_email">메일보내기</string>
+    <string name="choose_email_app">앱을 선택하세요</string>
+    <string name="no_email_app">이메일을 작성할 수 있는 앱이 없습니다</string>
 </resources>
