@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
     <string name="app_name">BookMarket</string>
     <string name="welcome_message">도서 쇼핑몰에 오신걸 환영합니다!</string>
@@ -27,4 +28,28 @@
     <string name="compose_email">메일보내기</string>
     <string name="choose_email_app">앱을 선택하세요</string>
     <string name="no_email_app">이메일을 작성할 수 있는 앱이 없습니다</string>
+    <string name="nav_login">로그인</string>
+    <string name="nav_settings">환경설정</string>
+    <string name="nav_myinfo">나의정보</string>
+    <string name="menu_home_title">홈으로</string>
+    <string name="menu_video">동영상강좌</string>
+    <string name="menu_customer">고객센터</string>
+    <string name="menu_mypage">마이페이지</string>
+    <string name="menu_search_title">검색</string>
+    <string name="books_title">도서목록</string>
+    <string name="menu_cart_title">장바구니</string>
+    <string name="menu_ebook">E-Book</string>
+    <string name="menu_market">마켓정보</string>
+    <string name="menu_settings">설정</string>
+    <string name="open_navigation">탐색 메뉴 열기</string>
+    <string name="book_details_title">도서상세정보</string>
+    <string name="book_search_hint">도서명을 입력해주세요.</string>
+    <string name="book_id_label">도서ID :</string>
+    <string name="book_name_label">도서명 : </string>
+    <string name="book_price_label">정 가 :</string>
+    <string name="book_date_label">출 간 : </string>
+    <string name="book_writer_label">지은이 : </string>
+    <string name="book_description_label">설 명 :</string>
+    <string name="book_category_label">분 류 : </string>
+    <string name="menu_banner_label">추천 도서 배너</string>
 </resources>
