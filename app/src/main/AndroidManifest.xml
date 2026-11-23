@@ -10,6 +10,8 @@
         <activity android:name=".cart.CartActivity" android:exported="false" />
         <activity android:name=".order.ShippingActivity" android:exported="false" />
         <activity android:name=".order.OrderActivity" android:exported="false" />
+        <activity android:name=".mypage.MyPageActivity" android:exported="false" />
+        <activity android:name=".mypage.MemoActivity" android:exported="false" />
         <activity android:name=".BookActivity" android:exported="false" />
         <activity android:name=".chapter08.CustomDialogProject" android:exported="false" />
         <activity android:name=".MainActivity" android:exported="true">

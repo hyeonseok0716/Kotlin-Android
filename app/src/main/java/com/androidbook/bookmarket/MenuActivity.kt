@@ -73,7 +73,7 @@ class MenuActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     fun onMyPageClick(view: View) {
-        Toast.makeText(view.context, R.string.menu_mypage, Toast.LENGTH_SHORT).show()
+        startActivity(Intent(this, com.androidbook.bookmarket.mypage.MyPageActivity::class.java))
     }
 
     fun onMarketInfoClick(view: View) {
