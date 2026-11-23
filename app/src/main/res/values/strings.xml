@@ -11,4 +11,13 @@
     <string name="show_count_result">결과보기</string>
     <string name="count_correct">맞았습니다</string>
     <string name="count_incorrect">틀렸습니다</string>
+    <string name="book_list_title">BookList</string>
+    <string name="book_algorithm">쉽게 배우는 알고리즘</string>
+    <string name="book_mysql">난생 처음 MySQL</string>
+    <string name="book_php">쉽게 배우는 PHP 웹 프로그래밍</string>
+    <string name="book_html">미라클 HTML5 + CSS3 + 자바스크립트</string>
+    <string name="book_algorithm_price">정가 : 22,000원</string>
+    <string name="book_mysql_price">정가 : 34,000원</string>
+    <string name="book_php_price">정가 : 30,000원</string>
+    <string name="book_html_price">정가 : 28,000원</string>
 </resources>
